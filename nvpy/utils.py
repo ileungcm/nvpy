@@ -43,7 +43,7 @@ def get_note_title_file(note):
             fn = unicode(fn)
 
         if note_markdown(note):
-            fn += '.mkdn'
+            fn += '.md'
         else:
             fn += '.txt'
 
