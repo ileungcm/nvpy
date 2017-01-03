@@ -57,6 +57,7 @@ class NotesDB(utils.SubjectMixin):
         # now read all .json files from disk
         fnlist = glob.glob(self.helper_key_to_fname('*'))
         txtlist = glob.glob(unicode(self.config.txt_path + '/*.txt', 'utf-8'))
+        txtlist = glob.glob(unicode(self.config.txt_path + '/*.md', 'utf-8'))
         txtlist += glob.glob(unicode(self.config.txt_path + '/*.mkdn', 'utf-8'))
 
         # removing json files and force full full sync if using text files
