@@ -183,6 +183,7 @@ class NotesDB(utils.SubjectMixin):
             'createdate': timestamp,
             'savedate': 0,  # never been written to disc
             'syncdate': 0,  # never been synced with server
+            'systemtags': ["markdown"],
             'tags': []
         }
 
